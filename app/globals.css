@@ -3,7 +3,7 @@
 @layer utilities {
   :root {
     --background: #ffffff;
-    --foreground: #1f2937;
+    --foreground: #374151;
   }
 }
 
@@ -58,7 +58,7 @@ body {
     font-size: 1.875rem; 
     letter-spacing: 0.05em;
     font-weight: 600;
-    color: #780606; 
+    color: #6b1d2f; 
   }
   @media (min-width: 768px) {
     .titulo-seccion {
@@ -88,6 +88,12 @@ body {
     cursor: pointer;
   }
   .boton-elegante:hover {
-    border-color: #780606;
+    border-color: #6b1d2f;
+    background-color: #6b1d2f;
+    color: #ffffff
   }
+}
+
+footer h4 {
+  color: #6b1d2f !important;
 }
