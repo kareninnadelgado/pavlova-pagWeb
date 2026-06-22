@@ -32,7 +32,7 @@ export default function Home() {
     {
       titulo: "Formando bailarines, \n el Movimiento",
       subtitulo: "Clases para todas las edades y niveles",
-      imagen: "/carrusel3.avif"
+      imagen: "/carrusel3.jpeg"
     }
   ];
 
