@@ -43,11 +43,11 @@ export default function MaestrasPage() {
           
           {/* Bloque Izquierdo*/}
           <div className="md:col-span-7 space-y-6 text-left">
-            <h1 className={`${ebGaramond.className} text-3xl md:text-4xl text-[#6b1d2f] font-medium leading-tight`}>
+            <h1 className={`${ebGaramond.className} titulo-seccion text-left`}>
               Garantía de excelencia y seguridad en el salón de clases.
             </h1>
 
-            <p className="text-[#1f2937] text-lg md:text-xl font-normal leading-relaxed">
+            <p className="cuerpo-texto-xl">
               Detrás de cada gran bailarín hay un maestro excepcional. En nuestra escuela, la enseñanza va más allá de marcar pasos; cuidamos la salud física, el desarrollo emocional y el crecimiento artístico de cada alumno. Contar con la certificación de la Royal Academy of Dance (RAD) es nuestra mayor garantía.
             </p>
           </div>
@@ -73,16 +73,16 @@ export default function MaestrasPage() {
           {/* PRESTIGIO Y PEDAGOGÍA */}
           <section className="space-y-8">
             <div className="border-b border-gray-200/60 pb-6 space-y-4">
-              <span className="text-base tracking-[0.2em] font-bold text-[#dc2626] uppercase block">
+              <span className="seccion-etiqueta-roja">
                 PRESTIGIO Y PEDAGOGÍA
               </span>
-              <h2 className={`${ebGaramond.className} text-3xl md:text-4xl text-[#6b1d2f] font-medium leading-tight`}>
+              <h2 className={`${ebGaramond.className} titulo-seccion`}>
                 ¿Qué significa ser una Maestra Certificada RAD?
               </h2>
-              <p className="text-[#1f2937] text-xl font-normal leading-[1.75rem] pt-2">
+              <p className="cuerpo-texto-xl pt-2">
                 Ser una Maestra Registrada ante la RAD (Registered Teacher Status - RTS) significa poseer una de las acreditaciones más rigurosas y respetadas en el mundo de la danza clásica. No cualquiera puede enseñar este método; nuestras maestras han pasado por años de formación universitaria y evaluaciones pedagógicas directas desde Londres.
               </p>
-              <p className="text-[#1f2937] text-xl font-normal leading-[1.75rem]">
+              <p className="cuerpo-texto-xl">
                 Una maestra RAD no solo domina la técnica del ballet, sino que es una especialista en:
               </p>
             </div>
@@ -93,7 +93,7 @@ export default function MaestrasPage() {
                 <span className="text-xs font-bold tracking-wider text-gray-400 uppercase block">
                   Anatomía y Kinesiología
                 </span>
-                <p className="text-[#1f2937] text-base font-normal leading-relaxed">
+                <p className="cuerpo-texto">
                   Entiende el cuerpo de los niños y jóvenes, sabiendo exactamente qué movimientos son seguros para cada edad sin arriesgar sus articulaciones o crecimiento.
                 </p>
               </div>
@@ -102,7 +102,7 @@ export default function MaestrasPage() {
                 <span className="text-xs font-bold tracking-wider text-gray-400 uppercase block">
                   Psicología del Desarrollo
                 </span>
-                <p className="text-[#1f2937] text-base font-normal leading-relaxed">
+                <p className="cuerpo-texto">
                   Sabe cómo motivar, corregir con amabilidad y estructurar una clase para que sea tan divertida para una niña de 4 años como desafiante para una joven de 16.
                 </p>
               </div>
@@ -111,7 +111,7 @@ export default function MaestrasPage() {
                 <span className="text-xs font-bold tracking-wider text-gray-400 uppercase block">
                   Actualización Continua
                 </span>
-                <p className="text-[#1f2937] text-base font-normal leading-relaxed">
+                <p className="cuerpo-texto">
                   La RAD exige a sus maestras activas un programa obligatorio de desarrollo profesional anual. Esto garantiza que nuestras aulas siempre estén alineadas con las últimas metodologías de enseñanza mundial.
                 </p>
               </div>
@@ -121,14 +121,14 @@ export default function MaestrasPage() {
           {/* LA DIFERENCIA RAD */}
           <section className="space-y-8">
             <div className="border-b border-gray-200/60 pb-6 space-y-4">
-              <span className="text-base tracking-[0.2em] font-bold text-[#dc2626] uppercase block">
+              <span className="seccion-etiqueta-roja">
                 LA DIFERENCIA RAD
               </span>
-              <h2 className={`${ebGaramond.className} text-3xl md:text-4xl text-[#6b1d2f] font-medium leading-tight`}>
+              <h2 className={`${ebGaramond.className} titulo-seccion`}>
                 Los Beneficios de Entrenar con el Sello RAD
               </h2>
-              <p className="text-[#1f2937] text-xl font-normal leading-[1.75rem] pt-2">
-                Aprender ballet bajo esta metodología internacional marca una diferencia que tus hijos llevarán para toda la vida. Estos son los beneficios clave que ofrece nuestra escuela:
+              <p className="cuerpo-texto-xl pt-2">
+                Aprender ballet bajo esta metodología internacional marca una diferencia que tus hijos llevarán para toda la vida. These are the key benefits offered by our school:
               </p>
             </div>
 
@@ -139,31 +139,31 @@ export default function MaestrasPage() {
               </span>
               
               <ul className="space-y-5">
-                <li className="text-base text-[#1f2937] font-normal flex items-start gap-3 leading-relaxed">
+                <li className="cuerpo-texto flex items-start gap-3">
                   <span className="text-[#dc2626] font-bold text-base mt-0.5 shrink-0">✓</span>
                   <div>
                     <strong className="text-gray-950 font-semibold block sm:inline">Evaluaciones con Validez Internacional:</strong> Cada año, tus hijos tienen la oportunidad de presentar exámenes oficiales. Sinodales enviados directamente por la RAD de Londres viajan a nuestra escuela para evaluarlos, otorgándoles boletas de calificaciones y certificados con validez global.
                   </div>
                 </li>
 
-                <li className="text-base text-[#1f2937] font-normal flex items-start gap-3 leading-relaxed">
+                <li className="cuerpo-texto flex items-start gap-3">
                   <span className="text-[#dc2626] font-bold text-base mt-0.5 shrink-0">✓</span>
                   <div>
                     <strong className="text-gray-950 font-semibold block sm:inline">Un Camino Seguro y Progresivo:</strong> El plan de estudios está perfectamente estructurado paso a paso. Ningún alumno es forzado a realizar movimientos para los que su cuerpo no esté físicamente maduro (como el uso prematuro de zapatillas de punta), previniendo lesiones graves.
                   </div>
                 </li>
 
-                <li className="text-base text-[#1f2937] font-normal flex items-start gap-3 leading-relaxed">
+                <li className="cuerpo-texto flex items-start gap-3">
                   <span className="text-[#dc2626] font-bold text-base mt-0.5 shrink-0">✓</span>
                   <div>
                     <strong className="text-gray-950 font-semibold block sm:inline">Desarrollo de Habilidades para la Vida:</strong> Más allá de formar bailarines, el método RAD cultiva la disciplina, la memoria, la resiliencia, el trabajo en equipo y una profunda apreciación musical y artística.
                   </div>
                 </li>
 
-                <li className="text-base text-[#1f2937] font-normal flex items-start gap-3 leading-relaxed">
+                <li className="cuerpo-texto flex items-start gap-3">
                   <span className="text-[#dc2626] font-bold text-base mt-0.5 shrink-0">✓</span>
                   <div>
-                    <strong className="text-gray-950 font-semibold block sm:inline">Portafolio de Créditos Escolares:</strong> En muchos sistemas educativos internacionales, las certificaciones de los grados superiores de la RAD otorgan créditos académicos oficiales válidos para preparatorias y universidades.
+                    <strong className="text-gray-950 font-semibold block sm:inline">Portafolio de Créditos Escolares:</strong> En muchos sistemas educativos internacionales, las certificaciones de los grados superiores de la RAD de Londres otorgan créditos académicos oficiales válidos para preparatorias y universidades.
                   </div>
                 </li>
               </ul>
@@ -179,7 +179,7 @@ export default function MaestrasPage() {
           
           <div className="flex items-center justify-center gap-6 pb-4">
             <div className="w-16 h-[1px] bg-[#dc2626]"></div>
-            <span className="text-base tracking-[0.2em] font-bold text-[#dc2626] uppercase text-center block">
+            <span className="seccion-etiqueta-roja !mb-0 text-center">
               MAESTRAS RAD
             </span>
             <div className="w-16 h-[1px] bg-[#dc2626]"></div>
@@ -211,7 +211,7 @@ export default function MaestrasPage() {
                     {maestra.nombre}
                   </h3>
 
-                  <p className="text-gray-600 text-sm font-normal leading-relaxed pt-1">
+                  <p className="cuerpo-texto pt-1">
                     {maestra.descripcion}
                   </p>
                 </div>

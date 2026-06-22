@@ -13,7 +13,10 @@ body {
 }
 
 @layer components {
-  /* Títulos */
+  /* ==========================================================================
+     1. BLOQUES SOBRE IMÁGENES (Inicio / Héroe de Exámenes)
+     ========================================================================== */
+  /* Texto gigante sobre imágenes */
   .titulo-principal {
     font-size: 2.25rem; 
     line-height: 2.5rem;
@@ -29,7 +32,7 @@ body {
     }
   }
 
-  /* Subtítulos del Carrusel */
+  /* Texto chico abajo o arriba del título en imágenes fijas/carrusel */
   .subtitulo-carrusel {
     font-size: 0.75rem;
     letter-spacing: 0.3em;
@@ -43,22 +46,33 @@ body {
     }
   }
 
-  /* Sub-Subtítulos */
+
+  /* ==========================================================================
+     2. JERARQUÍA DE TÍTULOS EN EL CONTENIDO (Vistas del Sitio)
+     ========================================================================== */
+  /* SUB-SUBTÍTULOS: Texto chico en Rojo Vivo que corona las secciones */
   .seccion-etiqueta-roja {
-    font-size: 1rem;
+    font-size: 0.75rem; /* Ajustado un poco más fino para estilo premium */
     letter-spacing: 0.2em;
     font-weight: 700;
     color: #dc2626; 
     text-transform: uppercase;
     display: block;
+    margin-bottom: 0.5rem;
+  }
+  @media (min-width: 768px) {
+    .seccion-etiqueta-roja {
+      font-size: 0.85rem;
+    }
   }
 
-  /* Sub-títulos */
+  /* SUBTÍTULOS: Títulos medianos/grandes en Rojo Vino (#6b1d2f) */
   .titulo-seccion {
     font-size: 1.875rem; 
     letter-spacing: 0.05em;
     font-weight: 600;
     color: #6b1d2f; 
+    line-height: 1.2;
   }
   @media (min-width: 768px) {
     .titulo-seccion {
@@ -66,15 +80,41 @@ body {
     }
   }
 
-  /* Texto */
+
+  /* ==========================================================================
+     3. TEXTOS DE PÁRRAFOS Y DESCRIPCIONES
+     ========================================================================== */
+  /* Texto Destacado o Introducciones */
   .cuerpo-texto-xl {
-    font-size: 1.25rem; 
+    font-size: 1.125rem; 
     line-height: 1.75rem;
     font-weight: 400;
     color: #1f2937;
   }
+  @media (min-width: 768px) {
+    .cuerpo-texto-xl {
+      font-size: 1.25rem;
+    }
+  }
 
-  /* Botones */
+  /* Texto Normal Base para párrafos genéricos */
+  .cuerpo-texto {
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    font-weight: 300;
+    color: #4b5563;
+  }
+  @media (min-width: 768px) {
+    .cuerpo-texto {
+      font-size: 1rem;
+    }
+  }
+
+
+  /* ==========================================================================
+     4. BOTONES Y COMPONENTES
+     ========================================================================== */
+  /* Botones elegantes con bordes interactivos */
   .boton-elegante {
     border: 1px solid #9ca3af;
     font-size: 0.75rem;
@@ -86,14 +126,16 @@ body {
     color: #374151;
     background-color: #ffffff;
     cursor: pointer;
+    display: inline-block;
   }
   .boton-elegante:hover {
     border-color: #6b1d2f;
     background-color: #6b1d2f;
-    color: #ffffff
+    color: #ffffff;
   }
 }
 
+/* Forzar color uniforme en títulos del Footer */
 footer h4 {
   color: #6b1d2f !important;
 }

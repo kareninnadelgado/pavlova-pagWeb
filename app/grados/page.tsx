@@ -20,7 +20,7 @@ const bloquesEstudios = [
     id: 'bloque-1',
     titulo: 'PRIMERAS ETAPAS',
     subtitulo: 'Niveles Iniciales',
-    descripcionGeneral: 'El viaje en la danza comienza despertando la imaginación. En estas etapas formativas, nos enfocamos en el desarrollo de las habilidades motoras básicas, la musicalidad y la confianza física a través de dinámicas lúdicas pero rigurosamente estructuradas, preparando el cuerpo para el futuro entrenamiento técnico.',
+    descripcionGeneral: 'El viaje en la danza comienza despertando la imaginación. En estas etapas formativas, nos enfocamos del desarrollo de las habilidades motoras básicas, la musicalidad y la confianza física a través de dinámicas lúdicas pero rigurosamente estructuradas, preparando el cuerpo para el futuro entrenamiento técnico.',
     colorEtiqueta: 'bg-[#6b1d2f]',
     imagenBloque: '/primary.webp',
     grados: [
@@ -29,7 +29,7 @@ const bloquesEstudios = [
         numero: '01',
         categoria: 'PRIMERA INFANCIA',
         nombre: 'Pre-School',
-        descripcion: 'Diseñado para los más pequeños, este nivel celebra la alegría del movimiento libre. Se fomenta la expresión corporal y la autonomía de forma totalmente divertida.',
+        descripcion: 'Diseñado para los más pequeños, este nivel celebra la alegría del movement libre. Se fomenta la expresión corporal y la autonomía de forma totalmente divertida.',
         puntos: [
           'Habilidades motrices gruesas: Caminar en puntas, correr con ligereza, marchar y saltar de forma coordinada.',
           'Conciencia espacial: Aprender a ubicarse en el salón, seguir trayectorias en círculo y respetar el espacio de los compañeros.',
@@ -239,7 +239,7 @@ const bloquesEstudios = [
         numero: '16',
         categoria: 'Advanced 2',
         nombre: 'Máxima Perfección Escénica',
-        descripcion: 'El examen técnico más alto que ofrece la RAD. Diseñado para bailarines listos para pisar escenarios profesionales internacionales como solistas.',
+        descripcion: 'El examen técnico más alto que ofrece la RAD. Diseñado para bailarines ready para pisar escenarios profesionales internacionales como solistas.',
         puntos: [
           'Madurez de Compañía: Demostración de una técnica impecable que ya no requiere correcciones básicas, enfocada en la perfección del detalle.',
           'Máxima Resistencia: Clases intensas que evalúan la fuerza cardiopulmonar para soportar variaciones completas de alta dificultad.',
@@ -292,32 +292,33 @@ export default function GradosPage() {
               Descubre la excelencia técnica a través del currículo de la Royal Academy of Dance, una progresión artística diseñada para formar bailarines de clase mundial.
             </p>
 
+            {/* Ajustado color de las líneas unificadoras a Rojo Vivo */}
             <div className="flex items-center justify-center gap-4 pt-2">
-              <div className="w-12 h-[1px] bg-red-600"></div>
-              <span className="text-[10px] font-bold tracking-[0.25em] text-red-600 uppercase">
+              <div className="w-12 h-[1px] bg-[#dc2626]"></div>
+              <span className="seccion-etiqueta-roja !mb-0 text-center">
                 Excelencia RAD
               </span>
-              <div className="w-12 h-[1px] bg-red-600"></div>
+              <div className="w-12 h-[1px] bg-[#dc2626]"></div>
             </div>
           </div>
         </header>
 
         <section className="max-w-5xl mx-auto px-6 pb-20 pt-8 grid md:grid-cols-12 gap-12 items-center">
           <div className="md:col-span-6 space-y-8">
-            <h2 className={`${ebGaramond.className} text-3xl md:text-4xl text-[#6b1d2f] font-medium leading-tight`}>
+            <h2 className={`${ebGaramond.className} titulo-seccion text-left`}>
               Una trayectoria de disciplina y arte.
             </h2>
-            <p className="text-[#1f2937] text-xl font-normal leading-[1.75rem]">
+            <p className="cuerpo-texto-xl">
               Nuestro sistema educativo se basa en los estándares internacionales más rigurosos. Cada nivel está meticulosamente estructurado para desarrollar no solo la fuerza física y la técnica, sino también la musicalidad, la presencia escénica y la comprensión intelectual de la danza clásica.
             </p>
             
             <div className="grid grid-cols-2 gap-6 pt-4 border-t border-gray-100">
               <div className="space-y-1">
-                <span className={`${ebGaramond.className} text-3xl font-bold text-red-600 block`}>17</span>
+                <span className={`${ebGaramond.className} text-3xl font-bold text-[#dc2626] block`}>17</span>
                 <span className="text-[10px] tracking-widest text-gray-400 font-bold uppercase block">Niveles Académicos</span>
               </div>
               <div className="space-y-1">
-                <span className={`${ebGaramond.className} text-3xl font-bold text-red-600 block`}>RAD</span>
+                <span className={`${ebGaramond.className} text-3xl font-bold text-[#dc2626] block`}>RAD</span>
                 <span className="text-[10px] tracking-widest text-gray-400 font-bold uppercase block">Certificación Global</span>
               </div>
             </div>
@@ -332,7 +333,7 @@ export default function GradosPage() {
               <p className="text-gray-950 italic text-sm font-medium leading-relaxed">
                 "La danza es el lenguaje oculto del alma."
               </p>
-              <span className="text-[9px] tracking-wider font-bold text-red-600 uppercase block mt-3">
+              <span className="text-[9px] tracking-wider font-bold text-[#dc2626] uppercase block mt-3">
                 — Martha Graham
               </span>
             </div>
@@ -364,7 +365,7 @@ export default function GradosPage() {
                         {bloque.titulo}
                       </h2>
                     </div>
-                    <p className="text-[#1f2937] text-xl font-normal leading-[1.75rem]">
+                    <p className="cuerpo-texto-xl">
                       {bloque.descripcionGeneral}
                     </p>
                   </div>
@@ -388,7 +389,7 @@ export default function GradosPage() {
                       >
                         <div className="p-6 space-y-2">
                           <div className="flex justify-between items-center">
-                            <span className="text-[11px] font-bold tracking-widest text-[#dc2626] uppercase">
+                            <span className="seccion-etiqueta-roja !mb-0">
                               {grado.categoria}
                             </span>
                             <span className={`${ebGaramond.className} text-xl font-bold text-gray-300`}>
@@ -403,7 +404,7 @@ export default function GradosPage() {
                           <div className={`transition-all duration-300 ease-in-out overflow-hidden ${
                             abierto ? 'max-h-[700px] opacity-100 pt-4 border-t border-gray-100 mt-4 space-y-4' : 'max-h-0 opacity-0'
                           }`}>
-                            <p className="text-[#1f2937] text-base font-normal leading-relaxed">
+                            <p className="cuerpo-texto">
                               {grado.descripcion}
                             </p>
 
@@ -414,7 +415,7 @@ export default function GradosPage() {
                               
                               <ul className="space-y-2.5">
                                 {grado.puntos.map((punto, idx) => (
-                                  <li key={idx} className="text-base text-[#1f2937] font-normal flex items-start gap-2.5 leading-relaxed">
+                                  <li key={idx} className="cuerpo-texto flex items-start gap-2.5">
                                     <span className="text-[#dc2626] font-bold text-base mt-0.5 shrink-0">✓</span>
                                     <span>{punto}</span>
                                   </li>
