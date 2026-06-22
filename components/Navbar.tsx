@@ -40,6 +40,9 @@ export default function Navbar() {
            <Link href="/maestras">Maestras</Link>
           </li>
           <li className="hover:text-[#dc2626] hover:scale-110 transition-all cursor-pointer duration-200 font-bold">
+           <Link href="/examenes">Examenes</Link>
+          </li>
+          <li className="hover:text-[#dc2626] hover:scale-110 transition-all cursor-pointer duration-200 font-bold">
             <Link href="/historia">Nuestra Historia</Link>
           </li>
           <li className="hover:text-[#dc2626] hover:scale-110 transition-all cursor-pointer duration-200 font-bold">
@@ -67,6 +70,9 @@ export default function Navbar() {
           </li>
           <li onClick={() => setMovilAbierto(false)} className="hover:text-[#dc2626] py-2 border-b border-gray-50 cursor-pointer">
             <Link href="/maestras">Maestras</Link>         
+          </li>
+          <li onClick={() => setMovilAbierto(false)} className="hover:text-[#dc2626] py-2 border-b border-gray-50 cursor-pointer">
+            <Link href="/examenes">Examenes</Link>         
           </li>
           <li onClick={() => setMovilAbierto(false)} className="hover:text-[#dc2626] py-2 border-b border-gray-50 cursor-pointer">
             <Link href="/historia">Nuestra Historia</Link>         

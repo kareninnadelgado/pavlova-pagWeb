@@ -20,7 +20,7 @@ const bloquesEstudios = [
     id: 'bloque-1',
     titulo: 'PRIMERAS ETAPAS',
     subtitulo: 'Niveles Iniciales',
-    descripcionGeneral: 'El viaje en la danza comienza despertando la imaginación. En estas etapas formativas, nos enfocamos del desarrollo de las habilidades motoras básicas, la musicalidad y la confianza física a través de dinámicas lúdicas pero rigurosamente estructuradas, preparando el cuerpo para el futuro entrenamiento técnico.',
+    descripcionGeneral: 'El viaje en la danza comienza despertando la imaginación. En estas etapas formativas, nos enfocamos en el desarrollo de las habilidades motoras básicas, la musicalidad y la confianza física a través de dinámicas lúdicas pero rigurosamente estructuradas, preparando el cuerpo para el futuro entrenamiento técnico.',
     colorEtiqueta: 'bg-[#6b1d2f]',
     imagenBloque: '/primary.webp',
     grados: [
@@ -28,7 +28,7 @@ const bloquesEstudios = [
         id: 'g-01',
         numero: '01',
         categoria: 'PRIMERA INFANCIA',
-        nombre: 'Pre-School ',
+        nombre: 'Pre-School',
         descripcion: 'Diseñado para los más pequeños, este nivel celebra la alegría del movimiento libre. Se fomenta la expresión corporal y la autonomía de forma totalmente divertida.',
         puntos: [
           'Habilidades motrices gruesas: Caminar en puntas, correr con ligereza, marchar y saltar de forma coordinada.',
@@ -52,7 +52,7 @@ const bloquesEstudios = [
         id: 'g-03',
         numero: '03',
         categoria: 'FUNDAMENTOS',
-        nombre: 'Primary ',
+        nombre: 'Primary',
         descripcion: 'El último peldaño de la iniciación. Aquí los alumnos consolidan las bases físicas y la terminología técnica elemental que requerirán en los Grados superiores.',
         puntos: [
           'Fortalecimiento muscular: Trabajo inicial en pies (articulación de empeines) y fortalecimiento de piernas para el despegue de saltos.',
@@ -78,7 +78,7 @@ const bloquesEstudios = [
         descripcion: 'El verdadero inicio de la estructura clásica. Se introduce formalmente la barra, el centro y el fascinante mundo de la danza teatral.',
         puntos: [
           'Introducción a la Danza de Carácter: Uso de zapatos y falda de carácter. Desarrolla ritmos complejos y la coordinación teatral mediante danzas folclóricas.',
-          'Postura Básica: Enfoque en la alineación de la columna, el control del peso del cuerpo sobre los pies and la estabilidad inicial.',
+          'Postura Básica: Enfoque en la alineación de la columna, el control del peso del cuerpo sobre los pies y la estabilidad inicial.',
           'Uso del Espacio: Comprensión de las direcciones del salón (frente y diagonales) para empezar a desplazarse con gracia.'
         ]
       },
@@ -125,7 +125,7 @@ const bloquesEstudios = [
         nombre: 'Consolidación Académica',
         descripcion: 'La culminación de la primera etapa de grados académicos. Este nivel consolida todo lo aprendido, exigiendo una técnica limpia, fuerza y una presencia escénica segura.',
         puntos: [
-          'Consolidación de Giros: Execution formal de piruetas en el centro controlando el inicio y el final del giro de manera limpia.',
+          'Consolidación de Giros: Ejecución formal de piruetas en el centro controlando el inicio y el final del giro de manera limpia.',
           'Precisión en la Barra: Combinaciones más largas que desafían la memoria, la resistencia muscular y el control del eje corporal.',
           'Expresión Artística: Integración total de la mirada, la proyección del torso y la intención dramática en cada secuencia de examen.'
         ]
@@ -169,7 +169,7 @@ const bloquesEstudios = [
         numero: '11',
         categoria: 'Grado 8',
         nombre: 'Presentación Profesional Individual',
-        descripcion: 'La cúspide de los grados generales. El examen se convierte en una presentación individual simulando una función real de ballet frente al sinodal internacional.',
+        descripcion: 'La cúspide de los grados generales. El examen se convierte en una presentation individual simulando una función real de ballet frente al sinodal internacional.',
         puntos: [
           'Solo Award (Examen Individual): La alumna realiza toda la sección de centro sola en el escenario, demostrando magnetismo, madurez y dominio absoluto.',
           'Refinamiento del Port de Bras: Máxima sofisticación en el movimiento de brazos, manos y cuello, logrando una estética profesional.',
@@ -231,7 +231,7 @@ const bloquesEstudios = [
         puntos: [
           'Variaciones Clásicas de Repertorio: Ejecución de coreografías solistas inspiradas en el repertorio profesional clásico, manteniendo la resistencia física.',
           'Puntas Avanzadas: Giros, saltos y combinaciones rápidas sobre las puntas en el centro del salón.',
-          'Consistencia Técnica: Capacidad para repetir secuencias de alta dificultad manteniendo la misma calidad, colocación y elegancia.'
+          'Consistencia Técnico: Capacidad para repetir secuencias de alta dificultad manteniendo la misma calidad, colocación y elegancia.'
         ]
       },
       {
@@ -250,8 +250,8 @@ const bloquesEstudios = [
   },
   {
     id: 'bloque-5',
-    titulo: 'BAILARINA PROFECIONAL',
-    subtitulo: 'Graduacción ',
+    titulo: 'BAILARINA PROFESIONAL',
+    subtitulo: 'Graduación',
     descripcionGeneral: 'El honor más prestigioso del universo RAD. No es un grado de clase; es un examen-audición público sobre un escenario real frente a un panel de jueces internacionales.',
     colorEtiqueta: 'bg-[#6b1d2f]',
     imagenBloque: '/soloseal.jpg',
@@ -281,176 +281,172 @@ export default function GradosPage() {
       <Navbar />
 
       {/* Encabezado */}
-      <header className="bg-white pt-20 pb-12 px-6 text-center">
-        <div className="max-w-3xl mx-auto space-y-6">
-          <h1 className={`${ebGaramond.className} text-4xl md:text-5xl lg:text-6xl text-[#6b1d2f] font-semibold tracking-normal`}>
-            Conoce Nuestros Grados
-          </h1>
-          
-          <p className="text-gray-600 italic font-light text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
-            Descubre la excelencia técnica a través del currículo de la Royal Academy of Dance, una progresión artística diseñada para formar bailarines de clase mundial.
-          </p>
-
-          <div className="flex items-center justify-center gap-4 pt-2">
-            <div className="w-12 h-[1px] bg-red-600"></div>
-            <span className="text-[10px] font-bold tracking-[0.25em] text-red-600 uppercase">
-              Excelencia RAD
-            </span>
-            <div className="w-12 h-[1px] bg-red-600"></div>
-          </div>
-        </div>
-      </header>
-
-      <section className="max-w-5xl mx-auto px-6 pb-20 pt-8 grid md:grid-cols-12 gap-12 items-center">
-
-        <div className="md:col-span-6 space-y-8">
-          <h2 className={`${ebGaramond.className} text-3xl md:text-4xl text-[#6b1d2f] font-medium leading-tight`}>
-            Una trayectoria de disciplina y arte.
-          </h2>
-          <p className="text-[#1f2937] text-xl font-normal leading-[1.75rem]">
-            Nuestro sistema educativo se basa en los estándares internacionales más rigurosos. Cada nivel está meticulosamente estructurado para desarrollar no solo la fuerza física y la técnica, sino también la musicalidad, la presencia escénica y la comprensión intelectual de la danza clásica.
-          </p>
-          
-          {/* Métricas en rojo */}
-          <div className="grid grid-cols-2 gap-6 pt-4 border-t border-gray-100">
-            <div className="space-y-1">
-              <span className={`${ebGaramond.className} text-3xl font-bold text-red-600 block`}>17</span>
-              <span className="text-[10px] tracking-widest text-gray-400 font-bold uppercase block">Niveles Académicos</span>
-            </div>
-            <div className="space-y-1">
-              <span className={`${ebGaramond.className} text-3xl font-bold text-red-600 block`}>RAD</span>
-              <span className="text-[10px] tracking-widest text-gray-400 font-bold uppercase block">Certificación Global</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="md:col-span-6 relative pb-12 md:pb-0">
-          <div className="w-full aspect-[4/5] bg-gray-100 rounded-sm overflow-hidden border border-gray-200/60 shadow-sm flex items-center justify-center">
-            <img src="/medallas.jpg" alt="Zapatillas de punta RAD" className="w-full h-full object-cover" /> 
-            <span className="text-[11px] uppercase tracking-wider text-gray-400 font-semibold font-mono absolute sr-only">[ Foto Zapatillas de Punta ]</span>
-          </div>
-
-          {/* Cuadro con frase*/}
-          <div className="absolute bottom-[-20px] left-4 md:left-[-40px] bg-white p-6 shadow-xl border border-gray-100 max-w-sm rounded-sm z-10">
-            <p className="text-gray-950 italic text-sm font-medium leading-relaxed">
-              "La danza es el lenguaje oculto del alma."
+      <div className="bg-white">
+        <header className="pt-20 pb-12 px-6 text-center">
+          <div className="max-w-3xl mx-auto space-y-6">
+            <h1 className={`${ebGaramond.className} text-4xl md:text-5xl lg:text-6xl text-[#6b1d2f] font-semibold tracking-normal`}>
+              Conoce Nuestros Grados
+            </h1>
+            
+            <p className="text-gray-600 italic font-light text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
+              Descubre la excelencia técnica a través del currículo de la Royal Academy of Dance, una progresión artística diseñada para formar bailarines de clase mundial.
             </p>
-            <span className="text-[9px] tracking-wider font-bold text-red-600 uppercase block mt-3">
-              — Martha Graham
-            </span>
-          </div>
-        </div>
-      </section>
 
-      {/* Linea divisora */}
-      <div className="max-w-5xl mx-auto px-6">
-        <div className="w-full h-[1px] bg-gray-200/70"></div>
+            <div className="flex items-center justify-center gap-4 pt-2">
+              <div className="w-12 h-[1px] bg-red-600"></div>
+              <span className="text-[10px] font-bold tracking-[0.25em] text-red-600 uppercase">
+                Excelencia RAD
+              </span>
+              <div className="w-12 h-[1px] bg-red-600"></div>
+            </div>
+          </div>
+        </header>
+
+        <section className="max-w-5xl mx-auto px-6 pb-20 pt-8 grid md:grid-cols-12 gap-12 items-center">
+          <div className="md:col-span-6 space-y-8">
+            <h2 className={`${ebGaramond.className} text-3xl md:text-4xl text-[#6b1d2f] font-medium leading-tight`}>
+              Una trayectoria de disciplina y arte.
+            </h2>
+            <p className="text-[#1f2937] text-xl font-normal leading-[1.75rem]">
+              Nuestro sistema educativo se basa en los estándares internacionales más rigurosos. Cada nivel está meticulosamente estructurado para desarrollar no solo la fuerza física y la técnica, sino también la musicalidad, la presencia escénica y la comprensión intelectual de la danza clásica.
+            </p>
+            
+            <div className="grid grid-cols-2 gap-6 pt-4 border-t border-gray-100">
+              <div className="space-y-1">
+                <span className={`${ebGaramond.className} text-3xl font-bold text-red-600 block`}>17</span>
+                <span className="text-[10px] tracking-widest text-gray-400 font-bold uppercase block">Niveles Académicos</span>
+              </div>
+              <div className="space-y-1">
+                <span className={`${ebGaramond.className} text-3xl font-bold text-red-600 block`}>RAD</span>
+                <span className="text-[10px] tracking-widest text-gray-400 font-bold uppercase block">Certificación Global</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="md:col-span-6 relative pb-12 md:pb-0">
+            <div className="w-full aspect-[4/5] bg-gray-100 rounded-sm overflow-hidden border border-gray-200/60 shadow-sm flex items-center justify-center">
+              <img src="/medallas.jpg" alt="Zapatillas de punta RAD" className="w-full h-full object-cover" /> 
+            </div>
+
+            <div className="absolute bottom-[-20px] left-4 md:left-[-40px] bg-white p-6 shadow-xl border border-gray-100 max-w-sm rounded-sm z-10">
+              <p className="text-gray-950 italic text-sm font-medium leading-relaxed">
+                "La danza es el lenguaje oculto del alma."
+              </p>
+              <span className="text-[9px] tracking-wider font-bold text-red-600 uppercase block mt-3">
+                — Martha Graham
+              </span>
+            </div>
+          </div>
+        </section>
       </div>
 
-      {/* Contenedor de los bloques */}
-      <main className="max-w-5xl mx-auto py-20 px-6 space-y-24">
-        {bloquesEstudios.map((bloque) => (
-          <section key={bloque.id} className="space-y-8">
-            
-            {/* Texto + foto */}
-            <div className="grid md:grid-cols-3 gap-8 items-center border-b border-gray-200 pb-8">
-              <div className="md:col-span-2 space-y-4">
-                <div className="flex items-center gap-3">
-                  <span className={`text-[10px] text-white font-bold tracking-widest px-3 py-1 rounded-sm uppercase ${bloque.colorEtiqueta}`}>
-                    {bloque.subtitulo}
-                  </span>
-                  <h2 className={`${ebGaramond.className} text-2xl md:text-3xl text-[#6b1d2f] tracking-wide font-bold`}>
-                    {bloque.titulo}
-                  </h2>
-                </div>
-                <p className="text-[#1f2937] text-xl font-normal leading-[1.75rem]">
-                  {bloque.descripcionGeneral}
-                </p>
-              </div>
-
-              {/* foto */}
-              <div className="w-full aspect-[16/10] bg-gray-100 rounded-sm border border-gray-200/60 overflow-hidden shadow-sm flex items-center justify-center text-center">
-                <img src={bloque.imagenBloque} alt={bloque.titulo} className="w-full h-full object-cover" />
-                <span className="text-[10px] uppercase tracking-wider text-gray-400 font-semibold font-mono absolute sr-only">
-                  [ Foto del {bloque.subtitulo} ]
-                </span>
-              </div>
-            </div>
-
-            {/* Tarjetas*/}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {bloque.grados.map((grado) => {
-                const abierto = gradoAbierto === grado.id;
-
-                return (
-                  <div 
-                    key={grado.id}
-                    className={`bg-white border border-gray-100 rounded-sm shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between ${
-                      abierto ? 'ring-1 ring-[#6b1d2f]/40 md:col-span-2 lg:col-span-3 shadow-xl bg-gradient-to-b from-white to-gray-50/30' : ''
-                    }`}
-                  >
-                    <div className="p-6 space-y-2">
-                      <div className="flex justify-between items-center">
-                        <span className="text-[11px] font-bold tracking-widest text-[#dc2626] uppercase">
-                          {grado.categoria}
-                        </span>
-                        <span className={`${ebGaramond.className} text-xl font-bold text-gray-300`}>
-                          #{grado.numero}
-                        </span>
-                      </div>
-                      
-                      <h3 className={`${ebGaramond.className} text-lg text-gray-900 font-bold leading-snug`}>
-                        {grado.nombre}
-                      </h3>
-
-                      <div className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                        abierto ? 'max-h-[700px] opacity-100 pt-4 border-t border-gray-100 mt-4 space-y-4' : 'max-h-0 opacity-0'
-                      }`}>
-                        {/* Descripción igual al texto de afuera pero un poco más chica */}
-                        <p className="text-[#1f2937] text-base font-normal leading-relaxed">
-                          {grado.descripcion}
-                        </p>
-
-                        <div className="space-y-2 pt-2">
-                          {/* Título */}
-                          <span className="text-xs font-bold tracking-wider text-gray-400 uppercase block">
-                            Puntos específicos de trabajo técnico:
-                          </span>
-                          
-                          {/* Lista con palomitas */}
-                          <ul className="space-y-2.5">
-                            {grado.puntos.map((punto, index) => (
-                              <li key={index} className="text-base text-[#1f2937] font-normal flex items-start gap-2.5 leading-relaxed">
-                                <span className="text-[#dc2626] font-bold text-base mt-0.5 shrink-0">✓</span>
-                                <span>{punto}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
+      {/* bloques que cambian color*/}
+      <div>
+        {bloquesEstudios.map((bloque, index) => {
+        
+          const esGris = index % 2 === 0;
+          
+          return (
+            <div 
+              key={bloque.id} 
+              className={`${esGris ? 'bg-[#f3f3f3] border-t border-b border-gray-200/40' : 'bg-white'} py-20 px-6 transition-colors duration-300`}
+            >
+              <section className="max-w-5xl mx-auto space-y-8">
+                
+                {/* Texto descriptivo + Foto del bloque */}
+                <div className="grid md:grid-cols-3 gap-8 items-center border-b border-gray-300/60 pb-8">
+                  <div className="md:col-span-2 space-y-4">
+                    <div className="flex items-center gap-3">
+                      <span className={`text-[10px] text-white font-bold tracking-widest px-3 py-1 rounded-sm uppercase ${bloque.colorEtiqueta}`}>
+                        {bloque.subtitulo}
+                      </span>
+                      <h2 className={`${ebGaramond.className} text-2xl md:text-3xl text-[#6b1d2f] tracking-wide font-bold`}>
+                        {bloque.titulo}
+                      </h2>
                     </div>
-
-                    {/* Contenedor del botón con clase 'group' para controlar estados hijos */}
-                    <div className="p-4 bg-gray-50/40 border-t border-gray-100/60 text-right group">
-                      <button
-                        onClick={() => setGradoAbierto(abierto ? null : grado.id)}
-                        className="inline-flex items-center justify-end gap-1 text-[10px] tracking-[0.15em] font-bold uppercase text-[#dc2626] transition-all duration-300 ease-out transform origin-right hover:scale-110 hover:text-red-700"
-                      >
-                        <span>{abierto ? 'Ocultar enfoque' : 'Ver enfoque técnico'}</span>
-                        <span className="transition-transform duration-300 group-hover:translate-x-0.5 font-sans text-xs">
-                          {abierto ? ' ✕' : ' ＋'}
-                        </span>
-                      </button>
-                    </div>
-
+                    <p className="text-[#1f2937] text-xl font-normal leading-[1.75rem]">
+                      {bloque.descripcionGeneral}
+                    </p>
                   </div>
-                );
-              })}
-            </div>
 
-          </section>
-        ))}
-      </main>
+                  <div className="w-full aspect-[16/10] bg-white rounded-sm border border-gray-200 overflow-hidden shadow-sm flex items-center justify-center text-center">
+                    <img src={bloque.imagenBloque} alt={bloque.titulo} className="w-full h-full object-cover" />
+                  </div>
+                </div>
+
+                {/* Tarjetas de Grados */}
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {bloque.grados.map((grado) => {
+                    const abierto = gradoAbierto === grado.id;
+
+                    return (
+                      <div 
+                        key={grado.id}
+                        className={`bg-white border border-gray-200 rounded-sm shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between ${
+                          abierto ? 'ring-1 ring-[#6b1d2f]/40 md:col-span-2 lg:col-span-3 shadow-xl bg-gradient-to-b from-white to-gray-50/20' : ''
+                        }`}
+                      >
+                        <div className="p-6 space-y-2">
+                          <div className="flex justify-between items-center">
+                            <span className="text-[11px] font-bold tracking-widest text-[#dc2626] uppercase">
+                              {grado.categoria}
+                            </span>
+                            <span className={`${ebGaramond.className} text-xl font-bold text-gray-300`}>
+                              #{grado.numero}
+                            </span>
+                          </div>
+                          
+                          <h3 className={`${ebGaramond.className} text-lg text-gray-900 font-bold leading-snug`}>
+                            {grado.nombre}
+                          </h3>
+
+                          <div className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                            abierto ? 'max-h-[700px] opacity-100 pt-4 border-t border-gray-100 mt-4 space-y-4' : 'max-h-0 opacity-0'
+                          }`}>
+                            <p className="text-[#1f2937] text-base font-normal leading-relaxed">
+                              {grado.descripcion}
+                            </p>
+
+                            <div className="space-y-2 pt-2">
+                              <span className="text-xs font-bold tracking-wider text-gray-400 uppercase block">
+                                Puntos específicos de trabajo técnico:
+                              </span>
+                              
+                              <ul className="space-y-2.5">
+                                {grado.puntos.map((punto, idx) => (
+                                  <li key={idx} className="text-base text-[#1f2937] font-normal flex items-start gap-2.5 leading-relaxed">
+                                    <span className="text-[#dc2626] font-bold text-base mt-0.5 shrink-0">✓</span>
+                                    <span>{punto}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Botón desplegable */}
+                        <div className="p-4 bg-gray-50/50 border-t border-gray-100 text-right group">
+                          <button
+                            onClick={() => setGradoAbierto(abierto ? null : grado.id)}
+                            className="inline-flex items-center justify-end gap-1 text-[10px] tracking-[0.15em] font-bold uppercase text-[#dc2626] transition-all duration-300 ease-out transform origin-right hover:scale-110 hover:text-red-700"
+                          >
+                            <span>{abierto ? 'Ocultar enfoque' : 'Ver enfoque técnico'}</span>
+                            <span className="transition-transform duration-300 group-hover:translate-x-0.5 font-sans text-xs">
+                              {abierto ? ' ✕' : ' ＋'}
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    );
+                  })}
+                </div>
+
+              </section>
+            </div>
+          );
+        })}
+      </div>
 
       <Footer />
 
