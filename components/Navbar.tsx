@@ -14,7 +14,6 @@ export default function Navbar() {
   const pathname = usePathname();
   const [movilAbierto, setMovilAbierto] = useState(false);
 
-  // Agregado 'Inicio' al principio para que sea totalmente explícito y visible
   const rutas = [
     { nombre: 'Inicio', path: '/' },
     { nombre: 'Grados', path: '/grados' },
@@ -22,14 +21,14 @@ export default function Navbar() {
     { nombre: 'Examenes', path: '/examenes' },
     { nombre: 'Nuestra Historia', path: '/historia' },
     { nombre: 'Galeria', path: '/galeria' },
-    { nombre: 'Contacto', path: '/contacto' }, // Corregido de /contactos a /contacto para hacer match con tu archivo
+    { nombre: 'Contacto', path: '/contactos' }, 
   ];
   
   return (
     <>
       <nav className="border-b border-gray-100 py-3 px-6 md:px-8 flex justify-between items-center bg-white fixed top-0 left-0 w-full z-50 shadow-sm">
         
-        {/* Logo Royal y Nombre - Ahora Desvinculados (Sin Link ni cursor-pointer) */}
+        {/* Logo Royal y Nombre */}
         <div className="flex items-center space-x-3 select-none">
           <div className="w-10 h-10 relative flex items-center justify-center shrink-0">
             <img 
@@ -39,14 +38,13 @@ export default function Navbar() {
             />
           </div>
           <h1 className={`${ebGaramond.className} text-xl md:text-2xl tracking-wider text-[#6b1d2f] font-bold uppercase`}>
-            Pavlova Royal Academy
+            Pavlova Colima
           </h1>
         </div>
 
-        {/* Opciones (Menú Escritorio Dinámico) */}
+        {/* Menú Escritorio Dinámico */}
         <ul className="hidden md:flex items-center space-x-8 text-sm tracking-[0.2em] font-medium uppercase">
           {rutas.map((ruta) => {
-            // Validación exacta para evitar que "Inicio" se quede rojo en otras páginas
             const estaActivo = pathname === ruta.path;
             
             return (
@@ -71,7 +69,7 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* Menu desplegable (Menú Móvil Dinámico) */}
+      {/* Menú móvil dinámico */}
       <div className={`fixed top-[65px] left-0 w-full bg-white border-b border-gray-200 shadow-lg z-40 md:hidden transition-all duration-300 ease-in-out ${movilAbierto ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden pointer-events-none'}`}>
         <ul className="flex flex-col p-6 space-y-4 text-xs tracking-[0.2em] font-bold uppercase">
           {rutas.map((ruta, index) => {

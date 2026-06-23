@@ -20,11 +20,11 @@ export default function ContactoPage() {
       
       <Navbar />
 
-      {/* ================= SECCIÓN DE CONTACTO PRINCIPAL ================= */}
+      {/* Concactos principales */}
       <main className="max-w-6xl mx-auto px-6 py-16 md:py-24">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
           
-          {/* COLUMNA IZQUIERDA: INFORMACIÓN Y CANALES */}
+          {/* informacion y canales */}
           <div className="md:col-span-6 space-y-8">
             
             {/* Encabezado e Introducción */}
@@ -32,11 +32,9 @@ export default function ContactoPage() {
               <span className="seccion-etiqueta-roja text-xs md:text-sm">
                 NUESTROS CONTACTOS
               </span>
-              {/* Aplicada la clase global 'titulo-principal' para dar fuerza y grosor consistente */}
               <h1 className={`${ebGaramond.className} titulo-principal text-[#6b1d2f]`}>
                 Guiamos tu camino hacia el arte.          
               </h1>
-              {/* Línea decorativa roja institucional unificada */}
               <div className="w-12 h-[2px] bg-[#dc2626] mt-2"></div>
               
               <p className="cuerpo-texto pt-2">
@@ -47,7 +45,7 @@ export default function ContactoPage() {
             {/* Bloque de Información Vertical */}
             <div className="space-y-6 pt-2">
               
-              {/* DIRECCIÓN / UBICACIÓN */}
+              {/* ubicación */}
               <div className="flex items-start gap-4">
                 <div className="text-[#dc2626] mt-1 shrink-0">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -66,7 +64,7 @@ export default function ContactoPage() {
                 </div>
               </div>
 
-              {/* TELÉFONO */}
+              {/* Teléfono */}
               <div className="flex items-start gap-4">
                 <div className="text-[#dc2626] mt-1 shrink-0">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -81,7 +79,7 @@ export default function ContactoPage() {
                 </div>
               </div>
 
-              {/* CORREO ELECTRÓNICO */}
+              {/* Correo */}
               <div className="flex items-start gap-4">
                 <div className="text-[#dc2626] mt-1 shrink-0">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -96,7 +94,7 @@ export default function ContactoPage() {
                 </div>
               </div>
 
-              {/* HORARIOS DE ATENCIÓN */}
+              {/* Horarios de atención */}
               <div className="flex items-start gap-4 pt-4 border-t border-gray-100">
                 <div className="text-[#dc2626] mt-1 shrink-0">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -119,7 +117,7 @@ export default function ContactoPage() {
 
             </div>
 
-            {/* BOTONES AUXILIARES / WHATSAPP */}
+            {/* Botones auxiliares / whatsapp */}
             <div className="pt-4 flex flex-wrap items-center gap-3">
               <a 
                 href="https://wa.me/TU_NUMERO_AQUI" 
@@ -139,7 +137,7 @@ export default function ContactoPage() {
 
           </div>
 
-          {/* COLUMNA DERECHA: MAPA INTERACTIVO */}
+          {/* Mapa interactivo */}
           <div className="md:col-span-6 flex justify-center md:justify-end">
             <div className="w-full max-w-lg aspect-square bg-gray-100 border border-gray-200/80 shadow-sm overflow-hidden rounded-sm relative">
               <iframe

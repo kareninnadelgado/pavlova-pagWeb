@@ -109,7 +109,7 @@ export default function ExamenesPage() {
       
       <Navbar />
 
-      {/* ================= 1. HERO PRINCIPAL ================= */}
+      {/* HERO PRINCIPAL  */}
       <div className="relative w-full h-[70vh] md:h-[80vh] flex items-center justify-start bg-black overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
@@ -134,7 +134,7 @@ export default function ExamenesPage() {
         </div>
       </div>
 
-      {/* ================= 2. SECCIÓN INTRODUCTORIA CENTRADA ================= */}
+      {/* Texto de introducción*/}
       <section className="bg-white py-16 md:py-24 px-6 text-center">
         <div className="max-w-3xl mx-auto space-y-6">
           <h2 className={`${ebGaramond.className} titulo-seccion`}>
@@ -149,11 +149,11 @@ export default function ExamenesPage() {
         </div>
       </section>
 
-      {/* ================= 3. SECCIÓN COMPUESTA ACORDEÓN + FOTO ================= */}
+      {/*secciones*/}
       <section className="bg-white pb-24 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-12 gap-12 items-start">
           
-          {/* Acordeón interactivo (Izquierda) */}
+          {/* Acordeón interactivo */}
           <div className="md:col-span-7 lg:col-span-7 space-y-3 order-2 md:order-1">
             {secciones.map((sec, idx) => {
               const estaAbierto = acordeonAbierto === idx;
@@ -168,7 +168,6 @@ export default function ExamenesPage() {
                     className="w-full flex items-center justify-between text-left py-4 group"
                   >
                     <div className="space-y-1 pr-4">
-                      {/* Removido el número de aquí para dejar solo el subtítulo de la categoría */}
                       <span className="seccion-etiqueta-roja text-xs md:text-sm">
                         {sec.subtitulo}
                       </span>

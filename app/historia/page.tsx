@@ -20,13 +20,12 @@ export default function HistoriaPage() {
       
       <Navbar />
 
-      {/* ================= ENCABEZADO PRINCIPAL ================= */}
+      {/* Titulo principal*/}
       <header className="pt-20 pb-16 px-6 text-center bg-white">
         <div className="max-w-3xl mx-auto space-y-4">
           <span className="seccion-etiqueta-roja text-xs md:text-sm">
             NUESTRA HISTORIA
           </span>
-          {/* Se aplicó la clase 'titulo-principal' para igualar el grosor y estilo visual de los otros títulos */}
           <h1 className={`${ebGaramond.className} titulo-principal text-[#6b1d2f]`}>
             Una Danza a través del Tiempo
           </h1>
@@ -36,7 +35,7 @@ export default function HistoriaPage() {
         </div>
       </header>
 
-      {/* ================= CONTENEDOR DE LA LÍNEA DE TIEMPO VERTICAL ================= */}
+      {/* Linea vertical*/}
       <main className="max-w-5xl mx-auto px-6 pb-28 relative">
         
         {/* Línea divisoria central decorativa */}
@@ -44,7 +43,7 @@ export default function HistoriaPage() {
 
         <div className="space-y-24 md:space-y-32 relative">
 
-          {/* BLOCK 1: EL ORIGEN (Imagen Izquierda - Texto Derecha) */}
+          {/* Origen */}
           <div className="grid md:grid-cols-2 gap-12 items-center relative">
             {/* Imagen Izquierda */}
             <div className="flex justify-center md:justify-start order-1">
@@ -71,7 +70,7 @@ export default function HistoriaPage() {
             </div>
           </div>
 
-          {/* BLOCK 2: CRECIMIENTO Y EXCELENCIA (Texto Izquierda - Imagen Derecha) */}
+          {/* Crecimiento y excelencia */}
           <div className="grid md:grid-cols-2 gap-12 items-center relative">
             {/* Texto Izquierda */}
             <div className="space-y-4 md:pr-8 text-left md:text-right order-2 md:order-1">
@@ -95,9 +94,9 @@ export default function HistoriaPage() {
             </div>
           </div>
 
-          {/* BLOCK 3: LIDERAZGO CON PASIÓN / LEGADO (Imagen Izquierda - Texto Derecha) */}
+          {/* Liderazgo / Legado */}
           <div className="grid md:grid-cols-2 gap-12 items-start relative">
-            {/* Imagen Izquierda (Perfil + Currículum) */}
+            {/* Imagen Izquierda  */}
             <div className="flex flex-col items-center md:items-start order-1 space-y-6">
               <div className="w-full max-w-md aspect-[4/5] bg-gray-50 border border-gray-200 shadow-sm overflow-hidden rounded-sm">
                 <img 

@@ -60,11 +60,9 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40"></div>
         
         <div className="relative z-10 text-white max-w-3xl">
-          {/* Se añade white-space: pre-line para respetar los saltos de línea \n */}
           <h2 className={`${ebGaramond.className} titulo-principal whitespace-pre-line`}>
             {diapositivas[fotoActiva].titulo}
           </h2>
-          {/* Línea decorativa unificada al color ROJO VIVO para que resalte */}
           <div className="w-16 h-[2px] bg-[#dc2626] my-6 mx-auto"></div>
           <p className="subtitulo-carrusel">{diapositivas[fotoActiva].subtitulo}</p>
           
@@ -102,7 +100,6 @@ export default function Home() {
           <p className="cuerpo-texto-xl">
             Somos una escuela certificada por la Royal Academy of Dance (RAD) de Londres, uno de los organismos de educación y formación en danza más influyentes del mundo. Nuestro objetivo es enseñar ballet con una metodología segura, progresiva y divertida.
           </p>
-          {/* El botón de "Nuestra Historia" ha sido removido con éxito de este bloque */}
         </div>
       </section>
 
