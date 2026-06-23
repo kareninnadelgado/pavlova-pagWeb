@@ -17,6 +17,13 @@ const inter = Inter({
 
 export default function Home() {
   const [fotoActiva, setFotoActiva] = useState(0);
+  
+  // Estado para controlar qué pregunta frecuente está abierta (por defecto la primera)
+  const [preguntasAbiertas, setPreguntasAbiertas] = useState<number | null>(0);
+
+  const togglePregunta = (index: number) => {
+    setPreguntasAbiertas(preguntasAbiertas === index ? null : index);
+  };
 
   const diapositivas = [
     {
@@ -33,6 +40,25 @@ export default function Home() {
       titulo: "Formando bailarines, \n el Movimiento",
       subtitulo: "Clases para todas las edades y niveles",
       imagen: "/carrusel3.jpeg"
+    }
+  ];
+
+  // Arreglo con la información de las Preguntas Frecuentes adaptado a tu formato
+  const faqSecciones = [
+    {
+      titulo: "¿A qué edad pueden ingresar las niñas y niños?",
+      subtitulo: "EDADES DE INGRESO",
+      contenido: "Recibimos alumnas y alumnos desde los 3 años en adelante para nuestro grupo de Pre-Primary. No se requiere experiencia previa para los grados iniciales, ya que llevamos un proceso formativo paso a paso."
+    },
+    {
+      titulo: "¿Qué es la certificación RAD y por qué es importante?",
+      subtitulo: "MÉTODO INTERNACIONAL",
+      contenido: "La Royal Academy of Dance (RAD) de Londres es una de las organizaciones de danza más prestigiosas del mundo. Estudiar con este método garantiza que la enseñanza es segura, profesional y que los exámenes anuales tienen validez internacional."
+    },
+    {
+      titulo: "¿Ofrecen clases de muestra o inducción?",
+      subtitulo: "CLASE DE PRUEBA",
+      contenido: "¡Sí! Sabemos que iniciar en el ballet es una decisión importante. Ofrecemos una clase muestra sin costo para que tu hija o hijo experimente la dinámica del salón, conozca a la maestra y evalúemos el grupo ideal para su nivel. Puedes agendarla desde nuestra sección de Contacto."
     }
   ];
 
@@ -100,6 +126,71 @@ export default function Home() {
           <p className="cuerpo-texto-xl">
             Somos una escuela certificada por la Royal Academy of Dance (RAD) de Londres, uno de los organismos de educación y formación en danza más influyentes del mundo. Nuestro objetivo es enseñar ballet con una metodología segura, progresiva y divertida.
           </p>
+        </div>
+      </section>
+
+      {/* Preguntas frecuentes */}
+      <section className="bg-white pb-24 px-6 border-t border-gray-100 pt-16">
+        <div className="max-w-3xl mx-auto space-y-8">
+          
+          {/* Encabezado de la sección */}
+          <div className="text-center space-y-2 mb-10">
+            <span className="seccion-etiqueta-roja text-xs md:text-sm">
+              RESOLVEMOS TUS DUDAS
+            </span>
+            <h2 className={`${ebGaramond.className} text-2xl md:text-3xl text-[#6b1d2f] font-semibold`}>
+              Preguntas Frecuentes
+            </h2>
+            <div className="w-12 h-[2px] bg-[#dc2626] mx-auto mt-2"></div>
+          </div>
+
+          {/* Acordeón dinámico */}
+          <div className="space-y-3">
+            {faqSecciones.map((sec, idx) => {
+              const estaAbierto = preguntasAbiertas === idx;
+
+              return (
+                <div 
+                  key={idx} 
+                  className="border-b border-gray-200 pb-3 transition-all duration-300"
+                >
+                  <button
+                    onClick={() => togglePregunta(idx)}
+                    className="w-full flex items-center justify-between text-left py-4 group"
+                  >
+                    <div className="space-y-1 pr-4">
+                      <span className="seccion-etiqueta-roja text-xs md:text-sm">
+                        {sec.subtitulo}
+                      </span>
+                      <h3 className={`${ebGaramond.className} text-base md:text-lg text-gray-900 font-semibold group-hover:text-[#6b1d2f] transition-colors`}>
+                        {sec.titulo}
+                      </h3>
+                    </div>
+
+                    {/* Icono de flecha */}
+                    <span className={`text-[#dc2626] transition-transform duration-300 shrink-0 ${estaAbierto ? 'rotate-180' : ''}`}>
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+                  </button>
+
+                  <div 
+                    className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                      estaAbierto ? 'max-h-[300px] opacity-100 pb-4' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="pt-2 border-t border-gray-50 mt-1">
+                      <p className="cuerpo-texto text-gray-600 font-light leading-relaxed">
+                        {sec.contenido}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
         </div>
       </section>
 

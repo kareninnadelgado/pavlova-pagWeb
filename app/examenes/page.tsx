@@ -176,8 +176,10 @@ export default function ExamenesPage() {
                       </h3>
                     </div>
 
-                    <span className="text-gray-500 font-light text-xl shrink-0 transition-transform duration-300">
-                      {estaAbierto ? '▲' : '▼'}
+                    <span className={`text-[#dc2626] transition-transform duration-300 shrink-0 ${estaAbierto ? 'rotate-180' : ''}`}>
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
                     </span>
                   </button>
 
