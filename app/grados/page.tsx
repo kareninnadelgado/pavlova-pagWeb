@@ -73,9 +73,9 @@ const bloquesEstudios = [
       {
         id: 'g-04',
         numero: '04',
-        categoria: 'Grado 1',
-        nombre: 'Estructura Clásica I',
-        descripcion: 'El verdadero inicio de la estructura clásica. Se introduce formalmente la barra, el centro y el fascinante mundo de la danza teatral.',
+        categoria: 'Estructura Clásica',
+        nombre: 'Grado 1',
+        descripcion: 'El verdadero inicio de la estructura clásica. Se introduce formalmente el centro y el fascinante mundo de la danza teatral.',
         puntos: [
           'Introducción a la Danza de Carácter: Uso de zapatos y falda de carácter. Desarrolla ritmos complejos y la coordinación teatral mediante danzas folclóricas.',
           'Postura Básica: Enfoque en la alineación de la columna, el control del peso del cuerpo sobre los pies y la estabilidad inicial.',
@@ -85,8 +85,8 @@ const bloquesEstudios = [
       {
         id: 'g-05',
         numero: '05',
-        categoria: 'Grado 2',
-        nombre: 'Fluidez y Armonía',
+        categoria: 'Fluidez y Armonía',
+        nombre: 'Grado 2',
         descripcion: 'Un nivel enfocado en dar fluidez y armonía al movimiento. La técnica se vuelve más detallada y se exige mayor precisión en los pies.',
         puntos: [
           'Trabajo de Pies (Battements): Desarrollo de la fuerza en los metatarsos y el empeine para lograr un estiramiento limpio de la pierna.',
@@ -97,8 +97,8 @@ const bloquesEstudios = [
       {
         id: 'g-06',
         numero: '06',
-        categoria: 'Grado 3',
-        nombre: 'Rigurosidad y Rotación',
+        categoria: 'Rigurosidad y Rotación',
+        nombre: 'Grado 3',
         descripcion: 'Un escalón clave donde el ballet clásico se vuelve más riguroso. Se aumenta la exigencia física y se prepara a la alumna para movimientos con giros.',
         puntos: [
           'Preparación para Piruetas: Ejercicios específicos en la barra y el centro para encontrar el equilibrio sobre un solo pie en relevé.',
@@ -109,8 +109,8 @@ const bloquesEstudios = [
       {
         id: 'g-07',
         numero: '07',
-        categoria: 'Grado 4',
-        nombre: 'Estilización del Movimiento',
+        categoria: 'Estilización del Movimiento',
+        nombre: 'Grado 4',
         descripcion: 'La técnica se estiliza y los pasos se vuelven más largos y ligados. Se busca que la alumna deje de verse como principiante y empiece a lucir como una bailarina en formación.',
         puntos: [
           'Líneas Corporales (Arabesques): Enfoque en sostener la pierna en el aire hacia atrás manteniendo el torso erguido y elegante.',
@@ -121,8 +121,8 @@ const bloquesEstudios = [
       {
         id: 'g-08',
         numero: '08',
-        categoria: 'Grado 5',
-        nombre: 'Consolidación Académica',
+        categoria: 'Consolidación Académica',
+        nombre: 'Grado 5',
         descripcion: 'La culminación de la primera etapa de grados académicos. Este nivel consolida todo lo aprendido, exigiendo una técnica limpia, fuerza y una presencia escénica segura.',
         puntos: [
           'Consolidación de Giros: Ejecución formal de piruetas en el centro controlando el inicio y el final del giro de manera limpia.',
@@ -143,8 +143,8 @@ const bloquesEstudios = [
       {
         id: 'g-09',
         numero: '09',
-        categoria: 'Grado 6',
-        nombre: 'Arte y Ligereza Lírica',
+        categoria: 'Arte y Ligereza Lírica',
+        nombre: 'Grado 6',
         descripcion: 'Un nivel bellísimo de corte lírico y romántico. Se asume que la técnica base está dominada, por lo que el enfoque se vuelca hacia el arte y la ligereza del movimiento.',
         puntos: [
           'Uso de Telas (Chiffon Scarves): Uso de lienzos de gasa ligeros para aprender a suavizar los brazos y visualizar la continuidad del movimiento.',
@@ -155,8 +155,8 @@ const bloquesEstudios = [
       {
         id: 'g-10',
         numero: '10',
-        categoria: 'Grado 7',
-        nombre: 'Interpretación Dramática',
+        categoria: 'Interpretación Dramática',
+        nombre: 'Grado 7',
         descripcion: 'La exigencia artística sube de nivel. El repertorio clásico se vuelve dramático, demandando una bailarina que transmita emociones complejas mientras ejecuta pasos de gran precisión.',
         puntos: [
           'Uso de Telas Avanzado: Coreografías con lienzos que incorporan dinámicas de saltos y giros, coordinando el accesorio con el espacio de forma perfecta.',
@@ -167,8 +167,8 @@ const bloquesEstudios = [
       {
         id: 'g-11',
         numero: '11',
-        categoria: 'Grado 8',
-        nombre: 'Presentación Profesional Individual',
+        categoria: 'Presentación Profesional Individual',
+        nombre: 'Grado 8',
         descripcion: 'La cúspide de los grados generales. El examen se convierte en una presentation individual simulando una función real de ballet frente al sinodal internacional.',
         puntos: [
           'Solo Award (Examen Individual): La alumna realiza toda la sección de centro sola en el escenario, demostrando magnetismo, madurez y dominio absoluto.',
@@ -189,8 +189,8 @@ const bloquesEstudios = [
       {
         id: 'g-12',
         numero: '12',
-        categoria: 'Intermediate Foundation',
-        nombre: 'Introducción al Alto Rendimiento',
+        categoria: 'Introducción al Alto Rendimiento',
+        nombre: 'Intermediate Foundation',
         descripcion: 'La puerta de entrada al universo profesional de la RAD. Las clases aumentan en frecuencia semanal y se introducen las bases anatómicas para el uso de puntas.',
         puntos: [
           'Introducción a las Puntas: Trabajo inicial y minucioso en la barra para fortalecer tobillos, pantorrillas y los arcos de los pies de forma segura.',
@@ -201,8 +201,8 @@ const bloquesEstudios = [
       {
         id: 'g-13',
         numero: '13',
-        categoria: 'Intermediate',
-        nombre: 'Consolidación de Puntas',
+        categoria: 'Consolidación de Puntas',
+        nombre: 'Intermediate',
         descripcion: 'Un nivel de alta exigencia técnica donde el trabajo de puntas se traslada oficialmente al centro del salón y se requiere una musculatura muy fuerte.',
         puntos: [
           'Puntas en el Centro: Ejecución de pasos básicos, equilibrios y pequeños desplazamientos sin el soporte de la barra.',
@@ -213,8 +213,8 @@ const bloquesEstudios = [
       {
         id: 'g-14',
         numero: '14',
-        categoria: 'Advanced Foundation',
-        nombre: 'Virtuosismo y Velocidad',
+        categoria: 'Virtuosismo y Velocidad',
+        nombre: 'Advanced Foundation',
         descripcion: 'Un puente de perfeccionamiento técnico. Se pule la velocidad de los pies, la altura de las extensiones y se añade complejidad a los giros en puntas.',
         puntos: [
           'Virtuosismo en Giros: Piruetas dobles y giros continuos tanto en zapatillas de media punta como en zapatillas de punta.',
@@ -225,8 +225,8 @@ const bloquesEstudios = [
       {
         id: 'g-15',
         numero: '15',
-        categoria: 'Advanced 1',
-        nombre: 'Calibre Profesional Avanzado',
+        categoria: 'Calibre Profesional Avanzado',
+        nombre: 'Advanced 1',
         descripcion: 'Nivel de calibre profesional avanzado. Preparación directa para audiciones en compañías o universidades de danza del mundo. La exigencia es absoluta.',
         puntos: [
           'Variaciones Clásicas de Repertorio: Ejecución de coreografías solistas inspiradas en el repertorio profesional clásico, manteniendo la resistencia física.',
@@ -237,8 +237,8 @@ const bloquesEstudios = [
       {
         id: 'g-16',
         numero: '16',
-        categoria: 'Advanced 2',
-        nombre: 'Máxima Perfección Escénica',
+        categoria: 'Máxima Perfección Escénica',
+        nombre: 'Advanced 2',
         descripcion: 'El examen técnico más alto que ofrece la RAD. Diseñado para bailarines ready para pisar escenarios profesionales internacionales como solistas.',
         puntos: [
           'Madurez de Compañía: Demostración de una técnica impecable que ya no requiere correcciones básicas, enfocada en la perfección del detalle.',
@@ -259,8 +259,8 @@ const bloquesEstudios = [
       {
         id: 'g-17',
         numero: '17',
-        categoria: 'Solo Seal Award',
-        nombre: 'Examen de Gala Internacional',
+        categoria: 'Examen de Gala Internacional',
+        nombre: 'Solo Seal Award',
         descripcion: 'El honor más prestigioso del universo RAD. No es un grado de clase; es un examen-audición público sobre un escenario real frente a un panel de jueces internacionales.',
         puntos: [
           'Requisito Exclusivo: Solo pueden presentarse aquellas alumnas que hayan alcanzado la calificación de "Distinción" en el examen de Advanced 2.',

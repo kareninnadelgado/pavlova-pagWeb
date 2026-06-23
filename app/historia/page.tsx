@@ -49,7 +49,7 @@ export default function HistoriaPage() {
             <div className="flex justify-center md:justify-start order-1">
               <div className="w-full max-w-md aspect-square bg-gray-50 border border-gray-200 shadow-sm overflow-hidden rounded-sm relative">
                 <img 
-                  src="/historia-origen.jpg" 
+                  src="/origen.jpg" 
                   alt="Origen Pavlova Colima" 
                   className="w-full h-full object-cover"
                 />
@@ -85,7 +85,7 @@ export default function HistoriaPage() {
             <div className="flex justify-center md:justify-end order-1 md:order-2">
               <div className="w-full max-w-md aspect-square bg-gray-50 border border-gray-200 shadow-sm overflow-hidden rounded-sm relative">
                 <img 
-                  src="/historia-crecimiento.jpg" 
+                  src="/certificacion.jpg" 
                   alt="Zapatillas de punta en Pavlova" 
                   className="w-full h-full object-cover"
                 />
@@ -100,7 +100,7 @@ export default function HistoriaPage() {
             <div className="flex flex-col items-center md:items-start order-1 space-y-6">
               <div className="w-full max-w-md aspect-[4/5] bg-gray-50 border border-gray-200 shadow-sm overflow-hidden rounded-sm">
                 <img 
-                  src="/directora-perfil.jpg" 
+                  src="/directora.jpg" 
                   alt="Directora de Pavlova Colima" 
                   className="w-full h-full object-cover"
                 />

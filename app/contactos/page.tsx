@@ -38,7 +38,7 @@ export default function ContactoPage() {
               <div className="w-12 h-[2px] bg-[#dc2626] mt-2"></div>
               
               <p className="cuerpo-texto pt-2">
-                ¡Queremos escucharte! Si tienes dudas sobre los horarios, las edades de ingreso, costos o quieres agendar una clase de muestra para tu hija o hijo, ponte en contacto con nosotros. Nuestro equipo te atenderá con gusto para guiarte en el inicio de este hermoso viaje en el ballet.
+                ¡Queremos escucharte! Si tienes dudas sobre los horarios, las edades de ingreso o quieres agendar una clase de muestra para tu hija o hijo, ponte en contacto con nosotros. Nuestro equipo te atenderá con gusto para guiarte en el inicio de este hermoso viaje en el ballet.
               </p>
             </div>
 
@@ -56,10 +56,10 @@ export default function ContactoPage() {
                 <div className="space-y-1">
                   <h4 className="text-xs font-bold tracking-wider uppercase text-gray-900">ADDRESS</h4>
                   <p className="text-sm text-gray-600 font-light leading-relaxed">
-                    [Tu dirección exacta: Calle, Número, Colonia, Colima, Colima]
+                    [Rufino Tamayo 50, Jardines Vista Hermosa III, 28017 Colima, Col.]
                   </p>
                   <p className="text-xs text-[#dc2626]/80 italic font-light">
-                    Referencias: Frente al jardín X, a media cuadra de [lugar conocido].
+                    Referencias: A contra esquina de pasteleria Miky de la avenica constitución.
                   </p>
                 </div>
               </div>
@@ -106,11 +106,9 @@ export default function ContactoPage() {
                   <p className="text-xs text-gray-600 font-light">
                     <strong className="font-medium text-gray-800">Lunes a Viernes:</strong> 4:00 PM a 8:00 PM
                   </p>
-                  <p className="text-xs text-gray-600 font-light">
-                    <strong className="font-medium text-gray-800">Sábados:</strong> 9:00 AM a 1:00 PM
-                  </p>
-                  <p className="text-xs text-gray-400 font-light italic">
-                    Domingos: Cerrado.
+                  
+                  <p className="text-xs text-gray-500 font-light italic">
+                    Sábados y Domingos: Cerrado.
                   </p>
                 </div>
               </div>
@@ -141,14 +139,13 @@ export default function ContactoPage() {
           <div className="md:col-span-6 flex justify-center md:justify-end">
             <div className="w-full max-w-lg aspect-square bg-gray-100 border border-gray-200/80 shadow-sm overflow-hidden rounded-sm relative">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m4!2s!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b860000000000%3A0x0!2sColima%2C+Colima!5e0!3m2!1ses-419!2smx!4v1650000000000!5m2!1ses-419!2smx"
-                width="100%"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1658.8848589184715!2d-103.71575280106778!3d19.259430707457593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84255ab86d9a55f7%3A0x4b108e4e996ee9b2!2sRufino%20Tamayo%2050%2C%20Jardines%20Vista%20Hermosa%20III%2C%2028017%20Colima%2C%20Col.!5e0!3m2!1ses!2smx!4v1782234673255!5m2!1ses!2smx" 
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="w-full h-full grayscale opacity-90 contrast-105 hover:grayscale-0 transition-all duration-500"
+                className="w-full h-full transition-all duration-500"
               ></iframe>
             </div>
           </div>
