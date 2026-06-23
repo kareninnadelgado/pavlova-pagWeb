@@ -24,6 +24,9 @@ export const metadata: Metadata = {
     "royal academy of dance colima",
     "ballet para niñas colima"
   ],
+  verification:{
+    google: "R03JghxGGd4CiuB-ZsJLk5d3huC--QekbUozZQwuNQI",
+  },
   openGraph: {
     title: "Pavlova Colima| Escuela de Ballet en Colima",
     description: "Formación artística de excelencia con certificación internacional RAD.",
